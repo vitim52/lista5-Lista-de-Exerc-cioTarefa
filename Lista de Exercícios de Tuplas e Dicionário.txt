@@ -1,0 +1,672 @@
+1)
+tupla_numeros = (1, 2, 3, 4, 5)
+print(tupla_numeros)
+
+2)
+# Criar uma tupla vazia
+minha_tupla = ()
+
+# Adicionar cinco elementos à tupla
+minha_tupla += (1,)  # Adicionando o número 1
+minha_tupla += (2,)  # Adicionando o número 2
+minha_tupla += (3,)  # Adicionando o número 3
+minha_tupla += (4,)  # Adicionando o numero 4
+minha_tupla += (5,)  # Adicionando o numero 5
+
+# Imprimir a tupla resultante
+print(minha_tupla)
+
+3)
+# Criar uma tupla com nomes de cores
+cores = ('vermelho', 'verde', 'azul', 'amarelo', 'laranja', 'roxo')
+
+# Ordenar a tupla em ordem alfabética
+cores_ordenadas = sorted(cores)
+
+# Exibir a tupla ordenada
+print(cores_ordenadas)
+
+4)
+# Criar uma tupla com números inteiros
+minha_tupla = (10, 20, 30, 40, 50)
+
+# Calcular a soma de todos os elementos na tupla
+soma = sum(minha_tupla)
+
+# Imprimir a soma
+print("A soma de todos os elementos na tupla é:", soma)
+
+5)
+# Criando uma tupla com números inteiros
+numeros = (10, 5, 23, 7, 14, 2)
+
+# Encontrando o maior valor na tupla
+maior_valor = max(numeros)
+
+# Encontrando o menor valor na tupla
+menor_valor = min(numeros)
+
+# Exibindo os resultados
+print(f"O maior valor na tupla é: {maior_valor}")
+print(f"O menor valor na tupla é: {menor_valor}")
+
+6)
+# Criar duas tuplas
+tupla1 = (1, 2, 3)
+tupla2 = (4, 5, 6)
+
+# Concatenar as duas tuplas em uma terceira tupla
+tupla3 = tupla1 + tupla2
+
+# Imprimir a terceira tupla
+print(tupla3)
+
+7)
+# Criar uma tupla de strings
+minha_tupla = ("Python", "Programação", "Tupla", "String", "Contagem", "Caracteres", "Mais", "Menos")
+
+# Inicializar uma variável para contar as strings com mais de 5 caracteres
+contador = 0
+
+# Iterar pela tupla
+for palavra in minha_tupla:
+    if len(palavra) > 5:
+        contador += 1
+
+# Exibir o resultado
+print(f"Existem {contador} palavras na tupla com mais de 5 caracteres.")
+
+8)
+# Criar uma tupla com números inteiros
+minha_tupla = (1, 2, 3, 4, 5)
+
+# Número que você deseja verificar se está presente
+numero_especifico = 3
+
+# Verificar se o número está presente na tupla
+if numero_especifico in minha_tupla:
+    print(f"O número {numero_especifico} está presente na tupla.")
+else:
+    print(f"O número {numero_especifico} não está presente na tupla.")
+
+9)
+# Criar uma tupla com números inteiros
+tupla_original = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+# Criar uma nova tupla com elementos pares
+tupla_pares = tuple(x for x in tupla_original if x % 2 == 0)
+
+# Imprimir a nova tupla
+print(tupla_pares)
+
+10)
+# Criar uma tupla de palavras
+palavras = ("cachorro", "gato", "elefante", "pássaro", "peixe")
+
+# Criar uma nova tupla com o comprimento de cada palavra
+comprimentos = tuple(len(palavra) for palavra in palavras)
+
+# Exibir as duas tuplas
+print("Tupla de palavras:", palavras)
+print("Tupla de comprimentos:", comprimentos)
+
+11)
+# Defina a tupla com os números inteiros
+numeros = (10, 20, 30, 40, 50)
+
+# Calcule a soma dos números na tupla
+soma = sum(numeros)
+
+# Calcule o número de elementos na tupla
+numero_de_elementos = len(numeros)
+
+# Calcule a média
+media = soma / numero_de_elementos
+
+# Exiba a média
+print("A média dos números é:", media)
+
+12)
+# Crie uma lista de tuplas de datas
+datas = [
+    (5, 8, 2000),
+    (15, 3, 1995),
+    (1, 1, 1980),
+    (28, 12, 2021),
+    (10, 7, 2010)
+]
+
+# Ordene a lista de datas da mais antiga para a mais recente
+datas_ordenadas = sorted(datas, key=lambda data: (data[2], data[1], data[0]))
+
+# Exiba as datas ordenadas
+for data in datas_ordenadas:
+    print(f"{data[0]}/{data[1]}/{data[2]}")
+
+13)
+# Criar uma tupla com números inteiros
+minha_tupla = (2, 4, 6, 8, 10)
+
+# Verificar se todos os elementos são pares
+todos_pares = all(numero % 2 == 0 for numero in minha_tupla)
+
+if todos_pares:
+    print("Todos os elementos da tupla são pares.")
+else:
+    print("A tupla contém pelo menos um elemento ímpar.")
+
+14)
+# Criando uma tupla com números inteiros (com elementos repetidos)
+tupla_original = (1, 2, 2, 3, 4, 4, 5)
+
+# Criando uma nova tupla sem elementos repetidos
+tupla_sem_repeticao = tuple(set(tupla_original))
+
+# Exibindo a nova tupla
+print(tupla_sem_repeticao)
+
+15)
+# Criar uma tupla com nomes de frutas
+frutas = ("maçã", "banana", "laranja", "uva", "morango")
+
+# Encontrar a posição de uma fruta específica (por exemplo, "laranja")
+fruta_procurada = "laranja"
+
+# Verificar se a fruta está na tupla antes de encontrar a posição
+if fruta_procurada in frutas:
+    posicao = frutas.index(fruta_procurada)
+    print(f"A fruta '{fruta_procurada}' está na posição {posicao + 1} da tupla.")
+else:
+    print(f"A fruta '{fruta_procurada}' não foi encontrada na tupla.")
+
+16)
+# Criando as duas tuplas de números
+tupla1 = (1, 2, 3, 4)
+tupla2 = (5, 6, 7, 8)
+
+# Criando a terceira tupla com a soma dos elementos correspondentes
+tupla_soma = tuple(a + b for a, b in zip(tupla1, tupla2
+
+17)
+# Criar uma tupla com nomes de países e suas populações
+paises_populacao = (
+    ("China", 1444216107),
+    ("Índia", 1380004385),
+    ("Estados Unidos", 331002651),
+    ("Indonésia", 273523615),
+    ("Paquistão", 220892340),
+)
+
+# Encontrar o país mais populoso
+pais_mais_populoso = max(paises_populacao, key=lambda x: x[1])
+
+print("O país mais populoso é:", pais_mais_populoso[0])
+print("Com uma população de:", pais_mais_populoso[1])
+
+18)
+# Criar uma tupla com notas de alunos
+notas_alunos = (7.5, 9.0, 6.2, 8.5, 5.7, 9.5)
+
+# Converter a tupla em uma lista para facilitar a ordenação
+notas_lista = list(notas_alunos)
+
+# Ordenar a lista em ordem crescente
+notas_lista.sort()
+
+# Converter a lista de volta para uma tupla
+notas_ordenadas = tuple(notas_lista)
+
+# Imprimir a nova tupla com as notas em ordem crescente
+print(notas_ordenadas)
+
+19)
+# Criar uma tupla com números inteiros
+minha_tupla = (15, 20, 12, 25, 30)
+
+# Verificar se todos os elementos são maiores que 10
+todos_maiores_que_10 = all(x > 10 for x in minha_tupla)
+
+if todos_maiores_que_10:
+    print("Todos os elementos são maiores que 10.")
+else:
+    print("Pelo menos um elemento não é maior que 10.")
+
+20)
+# Criando a tupla de nomes de animais
+animais = ("elefante", "girafa", "macaco", "leão", "tigre", "zebra")
+
+# Ordenando a tupla em ordem alfabética
+animais_ordenados = sorted(animais)
+
+# Exibindo os três primeiros animais em ordem alfabética
+tres_primeiros = animais_ordenados[:3]
+print(tres_primeiros)
+
+
+
+Exercícios de Dicionário:
+
+
+1)
+# Criando um dicionário vazio
+meu_dicionario = {}
+
+# Adicionando três pares chave-valor
+meu_dicionario["chave1"] = "valor1"
+meu_dicionario["chave2"] = "valor2"
+meu_dicionario["chave3"] = "valor3"
+
+# O dicionário agora contém os seguintes pares chave-valor
+# {'chave1': 'valor1', 'chave2': 'valor2', 'chave3': 'valor3'}
+
+2)
+pessoas = {
+    "João": 25,
+    "Maria": 30,
+    "Pedro": 22,
+    "Ana": 28,
+    "Carlos": 35
+}
+
+3)
+pessoas = {
+    "Alice": 28,
+    "Bob": 32,
+    "Carol": 45,
+    "David": 22,
+    "Eva": 35
+}
+
+# Exibir todas as chaves (nomes das pessoas)
+for nome in pessoas.keys():
+    print(nome)
+
+4)
+pessoas = {
+    "Alice": 28,
+    "Bob": 32,
+    "Carol": 45,
+    "David": 22,
+    "Eva": 35
+}
+
+# Exibir todas as chaves (nomes das pessoas)
+print("Chaves (Nomes das Pessoas):")
+for nome in pessoas.keys():
+    print(nome)
+
+# Exibir todos os valores (idades)
+print("\nValores (Idades):")
+for idade in pessoas.values():
+    print(idade)
+
+5)
+pessoas = {
+    "Alice": 28,
+    "Bob": 32,
+    "Carol": 45,
+    "David": 22,
+    "Eva": 35
+}
+
+# Exibir todas as chaves (nomes das pessoas)
+print("Chaves (Nomes das Pessoas):")
+for nome in pessoas.keys():
+    print(nome)
+
+# Exibir todos os valores (idades)
+print("\nValores (Idades):")
+for idade in pessoas.values():
+    print(idade)
+
+# Obter a idade de uma pessoa específica (por exemplo, "Bob")
+nome_da_pessoa = "Bob"
+if nome_da_pessoa in pessoas:
+    idade_do_bob = pessoas[nome_da_pessoa]
+    print(f"\nA idade de {nome_da_pessoa} é {idade_do_bob} anos.")
+else:
+    print(f"\n{nome_da_pessoa} não está no dicionário.")
+
+6)
+# Dicionário de produtos e preços
+produtos = {
+    'arroz': 10.0,
+    'feijão': 5.0,
+    'macarrão': 4.0,
+    'carne': 20.0,
+    'leite': 3.5,
+    'ovos': 2.0,
+    'pão': 2.5,
+    'frutas': 15.0,
+    'legumes': 8.0,
+    'sabonete': 1.5,
+}
+
+# Lista de compras
+lista_de_compras = ['arroz', 'feijão', 'carne', 'frutas', 'sabonete']
+
+# Função para calcular o valor total da lista de compras
+def calcular_valor_total(lista, dicionario_de_precos):
+    total = 0.0
+    for item in lista:
+        if item in dicionario_de_precos:
+            total += dicionario_de_precos[item]
+        else:
+            print(f"Produto '{item}' não encontrado no dicionário de preços.")
+    return total
+
+# Calcular o valor total da lista de compras
+total_da_compra = calcular_valor_total(lista_de_compras, produtos)
+
+# Exibir o valor total
+print(f"O valor total da lista de compras é R${total_da_compra:.2f}")
+
+7)
+# Criando um dicionário de contatos vazio
+contatos = {}
+
+# Função para adicionar um novo contato
+def adicionar_contato(nome, telefone):
+    contatos[nome] = telefone
+    print(f"Contato {nome} adicionado com sucesso!")
+
+# Adicionando um novo contato
+adicionar_contato("João", "123-456-789")
+adicionar_contato("Maria", "987-654-321")
+
+# Exibindo o dicionário de contatos
+print("Dicionário de Contatos:")
+for nome, telefone in contatos.items():
+    print(f"Nome: {nome}, Telefone: {telefone}")
+
+8)
+# Dicionário de contatos de exemplo
+contatos = {
+    "João": {
+        "telefone": "123456789",
+        "email": "joao@email.com"
+    },
+    "Maria": {
+        "telefone": "987654321",
+        "email": "maria@email.com"
+    },
+    "Pedro": {
+        "telefone": "555555555",
+        "email": "pedro@email.com"
+    }
+}
+
+# Função para remover um contato com base no nome
+def remover_contato(nome, contatos_dict):
+    if nome in contatos_dict:
+        del contatos_dict[nome]
+        print(f"Contato {nome} removido com sucesso.")
+    else:
+        print(f"Contato {nome} não encontrado na lista de contatos.")
+
+# Exemplo de uso
+nome_a_remover = "Maria"
+remover_contato(nome_a_remover, contatos)
+
+# Após a remoção, o dicionário de contatos será atualizado
+print(contatos)
+
+9)
+# Criando um dicionário com as notas dos alunos
+notas_alunos = {
+    'Aluno1': {'Matemática': 8.5, 'Ciências': 7.0, 'História': 6.5},
+    'Aluno2': {'Matemática': 9.0, 'Ciências': 8.0, 'História': 7.5},
+    'Aluno3': {'Matemática': 7.5, 'Ciências': 6.0, 'História': 8.0}
+}
+
+# Calculando a média das notas de cada aluno
+medias_alunos = {}
+
+for aluno, notas in notas_alunos.items():
+    soma = sum(notas.values())
+    media = soma / len(notas)
+    medias_alunos[aluno] = media
+
+# Imprimindo as médias
+for aluno, media in medias_alunos.items():
+    print(f'A média de {aluno} é: {media:.2f}')
+
+10)
+# Criando o dicionário de palavras-chave e definições
+dicionario = {
+    "computador": "Uma máquina eletrônica que processa dados de acordo com um conjunto de instruções.",
+    "gato": "Um mamífero felino doméstico, conhecido por ser um animal de estimação popular.",
+    "planeta": "Um corpo celeste que orbita uma estrela, como a Terra orbitando o Sol.",
+    "python": "Uma linguagem de programação de alto nível conhecida por sua simplicidade e legibilidade de código.",
+    "sustentabilidade": "A capacidade de manter ou sustentar uma determinada condição ou prática ao longo do tempo."
+}
+
+# Função para pesquisar uma definição
+def pesquisar_definicao(palavra):
+    if palavra in dicionario:
+        return dicionario[palavra]
+    else:
+        return "A palavra não foi encontrada no dicionário."
+
+# Loop para permitir que o usuário pesquise definições
+while True:
+    palavra_chave = input("Digite uma palavra para pesquisar a definição (ou 'sair' para encerrar): ").lower()
+    
+    if palavra_chave == 'sair':
+        break
+    
+    definicao = pesquisar_definicao(palavra_chave)
+    print(definicao)
+
+11)
+# Crie um dicionário com nomes de países e suas capitais
+paises_e_capitais = {
+    "Brasil": "Brasília",
+    "Estados Unidos": "Washington, D.C.",
+    "França": "Paris",
+    "Alemanha": "Berlim",
+    "Japão": "Tóquio",
+    "Canadá": "Ottawa",
+    "Austrália": "Canberra",
+    "Reino Unido": "Londres",
+    "Itália": "Roma",
+    "Espanha": "Madrid"
+}
+
+# Função para pesquisar a capital de um país
+def pesquisar_capital(pais):
+    capital = paises_e_capitais.get(pais)
+    if capital:
+        return capital
+    else:
+        return "País não encontrado no dicionário."
+
+# Solicitar ao usuário que insira o nome de um país
+while True:
+    pais = input("Digite o nome de um país (ou 'sair' para encerrar): ").strip()
+    
+    if pais.lower() == "sair":
+        break
+    
+    capital = pesquisar_capital(pais)
+    print(f"A capital de {pais} é {capital}\n")
+
+print("Programa encerrado.")
+
+12)
+# Dicionário com nomes de cidades e estados fictícios
+cidades_estados = {
+    'São Paulo': 'São Paulo',
+    'Rio de Janeiro': 'Rio de Janeiro',
+    'Belo Horizonte': 'Minas Gerais',
+    'Salvador': 'Bahia',
+    'Fortaleza': 'Ceará',
+    'Porto Alegre': 'Rio Grande do Sul',
+    'Recife': 'Pernambuco',
+    'Curitiba': 'Paraná',
+    'Brasília': 'Distrito Federal',
+    'Manaus': 'Amazonas',
+    'Belém': 'Pará',
+    'Goiânia': 'Goiás',
+    'Florianópolis': 'Santa Catarina',
+    'Natal': 'Rio Grande do Norte',
+}
+
+# Exibindo todos os estados sem repetição
+estados = set(cidades_estados.values())
+
+print("Estados sem repetição:")
+for estado in estados:
+    print(estado)
+
+13)
+# Criando o dicionário de produtos e estoques
+estoque_produtos = {
+    'Produto A': 15,
+    'Produto B': 8,
+    'Produto C': 25,
+    'Produto D': 5,
+    'Produto E': 12,
+    'Produto F': 3
+}
+
+# Valor específico para verificar
+valor_minimo = 10
+
+# Verificando produtos com estoque abaixo do valor específico
+produtos_abaixo_do_minimo = {produto: estoque for produto, estoque in estoque_produtos.items() if estoque < valor_minimo}
+
+# Exibindo os produtos com estoque abaixo do valor mínimo
+print("Produtos com estoque abaixo de", valor_minimo, "unidades:")
+for produto, estoque in produtos_abaixo_do_minimo.items():
+    print(f"{produto}: {estoque} unidades")
+
+14)
+# Criar um dicionário com nomes de frutas e suas quantidades
+frutas_quantidades = {
+    "maçã": 10,
+    "banana": 5,
+    "laranja": 8,
+    "uva": 15,
+    "morango": 12
+}
+
+# Encontrar a fruta com a maior quantidade
+fruta_maior_quantidade = max(frutas_quantidades, key=frutas_quantidades.get)
+
+# Imprimir a fruta com a maior quantidade
+print("A fruta com a maior quantidade é:", fruta_maior_quantidade)
+
+15)
+# Dicionário de alimentos e suas calorias por porção
+alimentos = {
+    "Arroz": 206,
+    "Feijão": 70,
+    "Frango grelhado": 165,
+    "Brócolis cozido": 55,
+    "Batata frita": 365,
+    "Salada verde": 15,
+    "Sorvete de chocolate": 143,
+    "Água": 0,
+}
+
+# Lista de alimentos consumidos em uma refeição hipotética
+refeicao = ["Arroz", "Feijão", "Frango grelhado", "Salada verde", "Sorvete de chocolate"]
+
+# Calcular o total de calorias consumidas na refeição
+total_calorias = 0
+for alimento in refeicao:
+    if alimento in alimentos:
+        total_calorias += alimentos[alimento]
+
+print("Total de calorias consumidas na refeição: {} calorias".format(total_calorias))
+
+16)
+cores_hex = {
+    "Vermelho": "#FF0000",
+    "Verde": "#008000",
+    "Azul": "#0000FF",
+    "Amarelo": "#FFFF00",
+    "Rosa": "#FFC0CB",
+    "Roxo": "#800080",
+    "Laranja": "#FFA500",
+    "Marrom": "#A52A2A",
+    "Ciano": "#00FFFF",
+    "Preto": "#000000",
+    "Branco": "#FFFFFF",
+    "Cinza": "#808080",
+}
+
+17)
+filmes = {
+    "Jurassic Park": 1993,
+    "Forrest Gump": 1994,
+    "Titanic": 1997,
+    "Matrix": 1999,
+    "O Senhor dos Anéis: A Sociedade do Anel": 2001,
+    "O Pianista": 2002,
+    "Avatar": 2009,
+    "A Origem": 2010,
+    "Gravidade": 2013,
+    "La La Land": 2016
+}
+
+# Ordenar os filmes por ano de lançamento
+filmes_ordenados = dict(sorted(filmes.items(), key=lambda x: x[1]))
+
+# Exibir os filmes ordenados por ano
+for filme, ano in filmes_ordenados.items():
+    print(f"{filme} - {ano}")
+
+18)
+jogadores = {
+    "Cristiano Ronaldo": 760,
+    "Lionel Messi": 775,
+    "Neymar Jr.": 353,
+    "Robert Lewandowski": 631,
+    "Karim Benzema": 475,
+    "Kylian Mbappé": 248,
+    "Harry Kane": 327,
+    "Erling Haaland": 115,
+    "Mohamed Salah": 271,
+    "Sergio Agüero": 414
+}
+
+19)
+jogadores = {
+    "Cristiano Ronaldo": 760,
+    "Lionel Messi": 775,
+    "Neymar Jr.": 353,
+    "Robert Lewandowski": 631,
+    "Karim Benzema": 475,
+    "Kylian Mbappé": 248,
+    "Harry Kane": 327,
+    "Erling Haaland": 115,
+    "Mohamed Salah": 271,
+    "Sergio Agüero": 414,
+    "Zlatan Ibrahimović": 572,
+    "Luis Suárez": 465,
+    "Gonzalo Higuaín": 344
+}
+
+# Encontre o jogador com mais gols
+melhor_jogador = max(jogadores, key=jogadores.get)
+gols_melhor_jogador = jogadores[melhor_jogador]
+
+print(f"O jogador com mais gols é {melhor_jogador}, com um total de {gols_melhor_jogador} gols.")
+
+20)
+# Criar um dicionário com informações de um livro
+livro = {
+    "Título": "Dom Quixote",
+    "Autor": "Miguel de Cervantes",
+    "Ano": 1605
+}
+
+# Exibir as informações do livro
+print("Informações do Livro:")
+print("Título:", livro["Título"])
+print("Autor:", livro["Autor"])
+print("Ano:", livro["Ano"])
+
+
